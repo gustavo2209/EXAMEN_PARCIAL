@@ -14,7 +14,7 @@ public class MatriculaAlumno {
         Integer alumnoId = null;
         String tipoDoc = "DNI";
         List<String> listaTipoDoc =Arrays.asList( "DNI", "CE", "Pasaporte");
-        List<String> listaTipoCreditos =Arrays.asList( "EBA", "EBE", "EBR", "CETPRO");
+        List<String> listaTipoColegio =Arrays.asList( "EBA", "EBE", "EBR", "CETPRO");
         
         if(!nombre.isEmpty() ){
             if(!apellidos.isEmpty() ){
