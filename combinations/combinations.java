@@ -6,7 +6,7 @@ public class Combinations {
 	int n = 5;
 	System.out.println("# Ladder's steps: " + n);
 	System.out.println("# Step combinations: " + combinations.countCombinations(n, 0));
-        System.out.println("# Step combinations: " + combinations.countCombinationsOptimize(n, 0));
+	System.out.println("# Step combinations: " + combinations.countCombinationsOptimize(n, 0));
         
     }
     
