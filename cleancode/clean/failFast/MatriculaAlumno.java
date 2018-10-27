@@ -15,7 +15,7 @@ public class MatriculaAlumno {
         String tipoDoc = "DNI";
         Integer edadMinima = 6;
         List<String> listaTipoDoc =Arrays.asList( "DNI", "CE", "Pasaporte");
-        List<String> listaTipoCreditos =Arrays.asList( "EBA", "EBE", "EBR", "CETPRO");
+        List<String> listaTipoColegio =Arrays.asList( "EBA", "EBE", "EBR", "CETPRO");
         
         if(nombre.isEmpty() ){
             throw new IllegalArgumentException("Nombre es requerido.");
@@ -32,7 +32,7 @@ public class MatriculaAlumno {
         
         this.estaMatriculado = (listaTipoDoc.contains(tipoDoc) && 
                                     this.edad >= edadMinima && 
-                                    listaTipoCreditos.contains("EBR"));    
+                                    listaTipoColegio.contains("EBR"));    
                 
         if(estaMatriculado){
             alumnoId = 1;   
