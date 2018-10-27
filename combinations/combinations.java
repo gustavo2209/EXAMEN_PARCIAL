@@ -3,9 +3,9 @@ public class Combinations {
     public static void main(String[] args) {
         
         Combinations combinations = new Combinations();
-	      int n = 5;
-	      System.out.println("# Ladder's steps: " + n);
-	      System.out.println("# Step combinations: " + combinations.countCombinations(n, 0));
+	int n = 5;
+	System.out.println("# Ladder's steps: " + n);
+	System.out.println("# Step combinations: " + combinations.countCombinations(n, 0));
         System.out.println("# Step combinations: " + combinations.countCombinationsOptimize(n, 0));
         
     }
@@ -14,15 +14,15 @@ public class Combinations {
         
         if (n < 0) {
             return 0;
-	      }
+	}
         if (n == 0 && level == 0) {
-                  return 0;
+            return 0;
         }
         if (n == 0 && level > 0) {
-                  return 1;
+            return 1;
         }
       
-	      return countCombinations(n - 1, level + 1) + countCombinations(n - 2, level + 1) + countCombinations(n - 3, level + 1);
+	return countCombinations(n - 1, level + 1) + countCombinations(n - 2, level + 1) + countCombinations(n - 3, level + 1);
 	
     }
     
@@ -30,12 +30,12 @@ public class Combinations {
 
         if (n < 0) {
             return 0;
-	      }
+	}
         if (n == 0 && level == 0) {
-                  return 0;
+            return 0;
         }
         if (n == 0 && level > 0) {
-                  return 1;
+            return 1;
         }
 	      
         return countCombinations(n - 1, level + 1) + countCombinations(n - 2, level + 1) + countCombinations(n - 3, level + 1);
