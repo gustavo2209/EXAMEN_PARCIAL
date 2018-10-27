@@ -30,7 +30,7 @@ public class MatriculaAlumno {
     }
     
     public boolean analizarEdad(int edad){
-        if(edad >=0 && edad <= 3500){
+        if(edad >=6 && edad <= 18){
             return true;
         }
         return false;
