@@ -11,7 +11,7 @@ public class MatriculaAlumnoClean {
     private int edad;
     private boolean estaMatriculado;
 
-    public Integer RegistrarCreditoEfectivo() throws Exception {
+    public Integer RegistrarAlumnoMatriculado(){
         Integer alumnoId = null;
         String tipoDoc = "DNI";
         Integer edadMinima = 6;
