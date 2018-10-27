@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class MatriculaAlumnoEarly {
+public class MatriculaAlumno {
     
     private int id;
     private String nombre;
